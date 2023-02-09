@@ -8,7 +8,6 @@ server_address = ('0.0.0.0', 8000)
 with open('example-server/example-data.txt', 'r') as f:
     config = ConfigParser()
     config.read_file(f)
-    print(config.sections())
 
 class RequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
